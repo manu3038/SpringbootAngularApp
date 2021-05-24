@@ -1,9 +1,9 @@
 INSERT INTO EMPLOYEE(id,name,email,phone_no,pan_no,domain,designation,years_of_exp) VALUES( 1 , 'robert', 'robert@mail.com', '9840206101', 'xyzsd1504j', 'front-end', 'AS', 2 );
 INSERT INTO EMPLOYEE(id,name,email,phone_no,pan_no,domain,designation,years_of_exp) VALUES( 2 , 'swati', 'swati@mail.com', '9899665838', 'qsdrf1205h', 'front-end', 'SE', 4 );
-INSERT INTO EMPLOYEE(id,name,email,phone_no,pan_no,domain,designation,years_of_exp) VALUES( 3 , 'priyanka', 'priyanka@mail.com', '9513248770', 'fghbn5201l', 'back-end', 'SA', 12 );
-INSERT INTO EMPLOYEE(id,name,email,phone_no,pan_no,domain,designation,years_of_exp) VALUES( 4 , 'julie', 'julie@mail.com', '8305611107', 'ertfs1204d', 'front-end', 'TL', 8 );
+INSERT INTO EMPLOYEE(id,name,email,phone_no,pan_no,domain,designation,years_of_exp) VALUES( 3 , 'priyanka', 'priyanka@mail.com', '9513248770', 'fghbn5201l', 'full-stack', 'SA', 12 );
+INSERT INTO EMPLOYEE(id,name,email,phone_no,pan_no,domain,designation,years_of_exp) VALUES( 4 , 'julie', 'julie@mail.com', '8305611107', 'ertfs1204d', 'full-stack', 'TL', 8 );
 INSERT INTO EMPLOYEE(id,name,email,phone_no,pan_no,domain,designation,years_of_exp) VALUES( 5 , 'clinton', 'clinton@mail.com', '9885145955', 'wergs1475m', 'front-end', 'SSE', 6 );
-INSERT INTO EMPLOYEE(id,name,email,phone_no,pan_no,domain,designation,years_of_exp) VALUES( 6 , 'shekar', 'shekar@mail.com', '8067310320', 'rcdpm1409f', 'back-end', 'SSA', 15 );
+INSERT INTO EMPLOYEE(id,name,email,phone_no,pan_no,domain,designation,years_of_exp) VALUES( 6 , 'shekar', 'shekar@mail.com', '8067310320', 'rcdpm1409f', 'full-stack', 'SSA', 15 );
 INSERT INTO EMPLOYEE (id,name,email,phone_no,pan_no,domain,designation,years_of_exp) VALUES( 7 , 'nitesh', 'nitesh@mail.com', '9664275678', 'qcfbr2562h', 'back-end', 'SSE', 7 );
 INSERT INTO EMPLOYEE(id,name,email,phone_no,pan_no,domain,designation,years_of_exp) VALUES( 8 , 'sapna', 'sapna@mail.com', '9999063882', 'okhjf1097g', 'front-end', 'AS', 1 );
 INSERT INTO EMPLOYEE(id,name,email,phone_no,pan_no,domain,designation,years_of_exp) VALUES( 9 , 'narendra', 'narendra@mail.com', '9347081731', 'ghnja4520f', 'front-end', 'AS', 2 );

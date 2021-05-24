@@ -14,7 +14,6 @@ export class EmployeeServiceService {
   private getEmpById = this.baseUrl + "/find-emp";
   private deleteEmpUrl = this.baseUrl + "/del-emp";
   private saveEmpUrl = this.baseUrl + "/save-emp";
-  public empList: Employee[] = [];
   constructor(private http: HttpClient) { }
 
   getAllEmps() {

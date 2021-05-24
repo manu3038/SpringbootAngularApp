@@ -1,1 +1,67 @@
-<p>employee-edit works!</p>
+<div class="container">
+    <form [formGroup]="empForm">
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="id">ID:</label>
+                <input type="text" class="form-control" name="id" id="id" formControlName="id">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="name">name:</label>
+                <input type="text" class="form-control" name="name" id="name" formControlName="name">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="email">email:</label>
+                <input type="text" class="form-control" name="email" id="email" formControlName="email">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="phoneNo">phoneNo:</label>
+                <input type="text" class="form-control" name="phoneNo" id="phoneNo" formControlName="phoneNo">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="panNo">panNo:</label>
+                <input type="text" class="form-control" name="panNo" id="panNo" formControlName="panNo">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="designation">ID:</label>
+                <input type="text" class="form-control" name="designation" id="designation"
+                    formControlName="designation">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="domain">domain:</label>
+                <select type="text" class="form-control" name="domain" id="domain" formControlName="domain">
+                    <option value="front-end">Front End (Angular/React)</option>
+                    <option value="back-end">Back End (Spring/Django/NodeJs)</option>
+                    <option value="full-stack">Full Stack (Angular/React + Spring/Django/NodeJs)</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="yearsOfExp">yearsOfExp:</label>
+                <input type="text" class="form-control" name="yearsOfExp" id="yearsOfExp" formControlName="yearsOfExp">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <button class="btn btn-primary" (click)="saveEmp()"> <span><i class="fa fa-save"></i></span>
+                    Save</button>
+                <br>
+                <button class="btn btn-primary" [routerLink]="['']"> <span><i class="fa fa-ban"></i></span>
+                    Close</button>
+            </div>
+        </div>
+
+    </form>
+</div>

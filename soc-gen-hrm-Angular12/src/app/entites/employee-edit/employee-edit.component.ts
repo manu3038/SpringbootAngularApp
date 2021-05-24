@@ -12,7 +12,7 @@ import { Employee } from '../employee/employee.model';
 export class EmployeeEditComponent implements OnInit {
 
   empForm: FormGroup = this.fb.group({
-    id: [{ value: '', disable: true }, ''],
+    id: ['', ''],
     name: ['', [Validators.required, Validators.maxLength(50)]],
     email: ['', [Validators.required, Validators.maxLength(50)]],
     phoneNo: ['', [Validators.required, Validators.maxLength(10)]],
@@ -22,6 +22,7 @@ export class EmployeeEditComponent implements OnInit {
     yearsOfExp: ['', [Validators.required, Validators.maxLength(2)]],
   });
   employee: Employee = new Employee;
+  formType: string = "add";
   constructor(private activatedRoute: ActivatedRoute, private fb: FormBuilder, private service: EmployeeServiceService) { }
 
   ngOnInit(): void {
@@ -30,6 +31,7 @@ export class EmployeeEditComponent implements OnInit {
         // get the values from API and patch to form        
         this.service.find(param['id']).subscribe(res => {
           this.employee = res.body!;
+          this.formType = "update";
           this.empForm.patchValue({
             id: this.employee.id,
             name: this.employee.name,
@@ -45,7 +47,20 @@ export class EmployeeEditComponent implements OnInit {
       } else {
         // this is in add 
       }
+      this.empForm.controls['id'].disable();
     });
   }
-
+  saveEmp() {
+    if (this.formType === "add") {
+      this.service.create(this.empForm.getRawValue()).subscribe(res => {
+        alert('Saved Successfully');
+        console.log(res.body);
+      })
+    } else {
+      this.service.update(this.empForm.getRawValue()).subscribe(res => {
+        alert('Saved Successfully');
+        console.log(res.body);
+      })
+    }
+  }
 }

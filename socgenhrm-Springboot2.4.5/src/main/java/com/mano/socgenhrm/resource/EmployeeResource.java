@@ -27,9 +27,9 @@ public class EmployeeResource {
     }
 
     @DeleteMapping("/del-emp/{id}")
-    public ResponseEntity<Void> deleteEmpById(@PathVariable Long id){
+    public void deleteEmpById(@PathVariable Long id){
         this.service.deleteEmpById(id);
-        return ResponseEntity.of(null);
+//        return ResponseEntity.of(Optional.of(null));
     }
 
     @PostMapping("/save-emp")
